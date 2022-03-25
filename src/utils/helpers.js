@@ -1,8 +1,9 @@
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat
 export const formatPrice = (number) => {
-  return new Intl.NumberFormat('en-US', {
+  return new Intl.NumberFormat('en-IN', {
     style: 'currency',
-    currency: 'USD',
-  }).format(number / 100)
+    currency: 'INR',
+  }).format(number)
 }
 
 export const getUniqueValues = (data, type) => {
