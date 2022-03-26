@@ -50,7 +50,8 @@ export const single_product_url = `https://course-api.com/react-store-single-pro
 
 //custom api
 
-// export const products_url = 'https://finalproducts.netlify.app'
+// export const products_url = 'https://webixer.netlify.app/.netlify/functions/airtable'
 
-// export const single_product_url = `https://finalproducts.netlify.app?id=`
+// export const single_product_url = `https://webixer.netlify.app/.netlify/functions/airtable?id=`
+
 
