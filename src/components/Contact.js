@@ -11,14 +11,17 @@ const Contact = () => {
             sint unde quaerat ratione soluta veniam provident adipisci cumque
             eveniet tempore?
           </p>
-          <form className='contact-form' action='post' data-netlify="true">
+          <form className='contact-form'
+            action='https://formspree.io/f/mqkndajj'
+            method='POST'
+          >
             <input
               type='email'
-              name='email'
               className='form-input'
               placeholder='enter email'
+              name='_replyto'
             />
-            <button type='submit' className='submit-btn' value='send message'>
+            <button type='submit' className='submit-btn'>
               subscribe
             </button>
           </form>
