@@ -7,9 +7,12 @@ const Contact = () => {
         <h3>Join our newsletter and get 20% off</h3>
         <div className='content'>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
             sint unde quaerat ratione soluta veniam provident adipisci cumque
-            eveniet tempore?
+            eveniet tempore? */}
+            “We see our customers as invited guests to a party, and we are the hosts.
+             It’s our job every day to make every important aspect of the customer 
+             experience a little bit better.”
           </p>
           <form className='contact-form'
             action='https://formspree.io/f/mqkndajj'
