@@ -11,13 +11,14 @@ const Contact = () => {
             sint unde quaerat ratione soluta veniam provident adipisci cumque
             eveniet tempore?
           </p>
-          <form className='contact-form'>
+          <form className='contact-form' method = 'post' data-netlify="true">
             <input
               type='email'
+              name='email'
               className='form-input'
               placeholder='enter email'
             />
-            <button type='submit' className='submit-btn'>
+            <button type='submit' className='submit-btn' value='send message'>
               subscribe
             </button>
           </form>
