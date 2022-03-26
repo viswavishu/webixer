@@ -14,3 +14,5 @@ export const getUniqueValues = (data, type) => {
 
   return ['all', ...new Set(unique)]
 }
+
+// console.log(new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(number));

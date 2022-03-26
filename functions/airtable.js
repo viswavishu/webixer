@@ -9,12 +9,12 @@ const airtable = new Airtable({ apiKey: 'keyR3sFraWsqJZuo6' })
 exports.handler = async (event, context, cb) => {
     try {
         const {records} = await airtable.list();
-        // console.log(records);
+        // console.log(records)
         const products = records.map((product) => {
             const {id} = product
-            const {name, image, price} = product.fields
+            const {name, image, price, description} = product.fields
             const url = image[0].url
-            return {id, name, url, price}
+            return {id, name, url, price, description}
         })
         return {
             statusCode: 200,

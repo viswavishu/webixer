@@ -9,6 +9,9 @@ exports.handler = async function (event, context) {
     // Calculate the order total on the server to prevent
     // people from directly manipulating the amount on the client
     return shipping_fee + total_amount;
+    //try this for adding round amount to inr currency
+    // return shipping_fee + total_amount * 100;
+
   }
   try {
     // Create a PaymentIntent with the order amount and currency
