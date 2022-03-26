@@ -8,25 +8,28 @@ const airtable = new Airtable({ apiKey: 'keyR3sFraWsqJZuo6' })
 
 exports.handler = async (event, context, cb) => {
     try {
-        const {records} = await airtable.list();
+        const { records } = await airtable.list();
         // console.log(records)
         const products = records.map((product) => {
-            const {id} = product
-            const {name, image, price, description} = product.fields
+            const { id } = product
+            const { name, image, price, description } = product.fields
             const url = image[0].url
-            return {id, name, url, price, description}
+            return { id, name, url, price, description }
         })
         return {
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+            },
             statusCode: 200,
             // body: 'Airtable Example',
-            body:  JSON.stringify(products),//prints the api to page
+            body: JSON.stringify(products),//prints the api to page
         }
     } catch (error) {
         return {
             statusCode: 500,
             body: 'Internal server error',
         }
-     }
-   
+    }
+
 }
 
