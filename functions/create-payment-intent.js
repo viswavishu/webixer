@@ -8,9 +8,9 @@ exports.handler = async function (event, context) {
     // Replace this constant with a calculation of the order's amount
     // Calculate the order total on the server to prevent
     // people from directly manipulating the amount on the client
-    return shipping_fee + total_amount;
+    //return shipping_fee + total_amount;
     //try this for adding round amount to inr currency
-    // return shipping_fee + total_amount * 100;
+    return shipping_fee + total_amount * 100;
 
   }
   try {
