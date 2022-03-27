@@ -43,15 +43,13 @@ export const services = [
 ]
 
 
-export const products_url = 'https://course-api.com/react-store-products'
+//  export const products_url = 'https://course-api.com/react-store-products'
 
-export const single_product_url = `https://course-api.com/react-store-single-product?id=`
+// export const single_product_url = `https://course-api.com/react-store-single-product?id=`
 
 
 //custom api
 
-// export const products_url = 'https://webixer.netlify.app/.netlify/functions/airtable'
+ export const products_url = 'https://myserverless.netlify.app/api/airtable'
 
-// export const single_product_url = `https://webixer.netlify.app/.netlify/functions/airtable?id=`
-
-
+ export const single_product_url = `https://myserverless.netlify.app/api/products?id=`
